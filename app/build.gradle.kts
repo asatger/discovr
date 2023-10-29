@@ -46,4 +46,16 @@ dependencies {
 
     // Koin
     implementation("io.insert-koin:koin-android:3.2.0")
+
+    // OKHttp
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
+    // Moshi
+    implementation("com.squareup.moshi:moshi:1.14.0")
+    implementation("com.squareup.moshi:moshi-adapters:1.14.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
 }
