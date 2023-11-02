@@ -1,4 +1,4 @@
-package org.discovr.mobile.core.domain.models
+package org.discovr.mobile.core.domain
 
 sealed class Resource<out R, out F> {
 
