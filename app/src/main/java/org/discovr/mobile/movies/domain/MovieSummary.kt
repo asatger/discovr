@@ -12,14 +12,14 @@ import java.util.Date
 
 data class MovieSummary(
     val isAdultContent: Boolean,
-    val backdropPath: Path,
+    val backdropPath: Path?,
     val genreIds: Ids,
     val id: Id,
     val originalLanguage: Language,
     val originalTitle: Title,
     val overview: Overview,
     val popularity: Popularity,
-    val posterPath: Path,
+    val posterPath: Path?,
     val releaseDate: Date,
     val hasVideo: Boolean,
     val vote: Vote
