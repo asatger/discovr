@@ -6,5 +6,5 @@ sealed class Resource<out R, out F> {
 
     data class Failure<out F>(val failure: F) : Resource<Nothing, F>()
 
-    data object Loading : Resource<Nothing, Nothing>()
+    object Loading : Resource<Nothing, Nothing>()
 }
