@@ -2,6 +2,7 @@ package org.discovr.mobile.core.di
 
 import android.content.Context
 import org.discovr.mobile.core.di.module.coreModule
+import org.discovr.mobile.movies.di.movieModules
 import org.koin.android.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -15,9 +16,7 @@ object KoinApp {
             androidLogger(if (BuildConfig.DEBUG) Level.ERROR else Level.NONE)
             androidContext(context)
             modules(
-                listOf(
-                    coreModule
-                )
+                listOf(coreModule) + movieModules
             )
         }
     }
