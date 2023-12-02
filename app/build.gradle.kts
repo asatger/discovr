@@ -83,5 +83,9 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
 
     implementation("androidx.activity:activity-compose:1.8.0")
+    implementation("androidx.compose.runtime:runtime:1.5.4")
+
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:2.7.5")
 
 }
