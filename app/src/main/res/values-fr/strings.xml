@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Discovr</string>
+
+    <string name="drawer_item_movies_label">Films</string>
+    <string name="drawer_item_movies_content_description">Bouton pour naviguer vers les films</string>
+
+    <string name="top_app_bar_item_back_button_content_description">Bouton pour naviguer en arrière</string>
+    <string name="top_app_bar_item_menu_button_content_description">Bouton pour ouvrir le menu latéral</string>
+</resources>

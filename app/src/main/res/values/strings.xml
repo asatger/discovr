@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Discovr</string>
+    <string name="app_name" translatable="false">Discovr</string>
+
+    <string name="drawer_item_movies_label">Movies</string>
+    <string name="drawer_item_movies_content_description">Button to navigate to movies</string>
+
+    <string name="top_app_bar_item_back_button_content_description">Button to navigate back</string>
+    <string name="top_app_bar_item_menu_button_content_description">Button to open navigation drawer</string>
 </resources>
