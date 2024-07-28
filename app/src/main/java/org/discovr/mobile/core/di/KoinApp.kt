@@ -1,9 +1,9 @@
 package org.discovr.mobile.core.di
 
 import android.content.Context
-import org.discovr.mobile.core.di.module.coreModule
+import org.discovr.mobile.core.data.httpclient.modules.httpClientModule
 import org.discovr.mobile.home.di.homeModules
-import org.discovr.mobile.movies.di.movieModules
+import org.discovr.mobile.movies.di.moviesModules
 import org.koin.android.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -17,7 +17,7 @@ object KoinApp {
             androidLogger(if (BuildConfig.DEBUG) Level.ERROR else Level.NONE)
             androidContext(context)
             modules(
-                listOf(coreModule) + movieModules + homeModules
+                listOf(httpClientModule) + homeModules + moviesModules
             )
         }
     }
