@@ -1,11 +1,19 @@
 package org.discovr.mobile.core.domain
 
-data class Page<L : List<*>>(
+data class Page<T>(
     val totalPages: Int,
     val totalResults: Int,
     val currentPage: Int,
-    val results: L
+    val results: List<T>
 ) {
+    companion object {
+        fun <T> empty(page: Int) = Page<T>(
+            totalPages = 0,
+            totalResults = 0,
+            currentPage = page,
+            results = listOf()
+        )
+    }
 
     val resultsCount
         get(): Int = this.results.size
