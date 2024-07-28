@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import org.discovr.mobile.movies.ui.MoviesScreen
 
 @Composable
 fun AppNavHost(
@@ -21,7 +22,9 @@ fun AppNavHost(
     ) {
         
         composable("movies") {
-            Text(text = "Movies screen")
+            MoviesScreen {
+                println(it.originalTitle)
+            }
         }
     }
 }

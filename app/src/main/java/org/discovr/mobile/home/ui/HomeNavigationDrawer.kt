@@ -27,11 +27,11 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.launch
 import org.discovr.mobile.home.viewmodels.HomeViewModel
 import org.discovr.mobile.navigation.ui.AppNavHost
+import org.koin.androidx.compose.koinViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Preview
@@ -39,7 +39,7 @@ import org.discovr.mobile.navigation.ui.AppNavHost
 fun HomeNavigationDrawer() {
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
-    val viewModel = viewModel(modelClass = HomeViewModel::class.java)
+    val viewModel = koinViewModel<HomeViewModel>()
     val drawerItems = viewModel.drawerItems
     val selectedItem = remember { mutableStateOf(drawerItems[0]) }
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior(rememberTopAppBarState())
